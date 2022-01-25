@@ -1,0 +1,33 @@
+<html>
+
+<head>
+    <title>Touch the numbers</title>
+    <link rel="stylesheet" href="css/touch-nums.css">
+</head>
+
+<body onload="initGame()">
+    
+    <h2>Touch the numbers !</h2>
+    <div class="game-div">
+        <div class="level">Choose your level :
+            <br>
+            <p>
+                <span class="easy" onclick="renderBoard(4)"> Easy</span>
+                <span class="medium" onclick="renderBoard(5)"> Medium</span>
+                <span class="hard" onclick="renderBoard(6)"> Hard</span>
+                <span class="extreme" onclick="renderBoard(7)"> Extreme</span>
+            </p>
+        </div>
+        <div class="timer">Game time :</div>
+        <div class="next">Next number :</div>
+        <table  cellpadding="10">
+            <tbody class="board"></tbody>
+        </table>
+
+    </div>
+
+
+    <script src="js/touch-nums.js"></script>
+</body>
+
+</html>
